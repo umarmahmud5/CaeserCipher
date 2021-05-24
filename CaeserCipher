@@ -1,0 +1,103 @@
+import java.util.Scanner;
+public class CeaserCipher{
+    
+    private static String plainText = null;
+    private static Scanner scan;
+    private static String cipherText;
+     public static void main(String []args){
+        
+        scan = new Scanner(System.in);
+        System.out.println("Please Enter PlainText");
+        plainText = scan.nextLine();
+        
+        cipherText = " ";
+        for (int i = 0; i < plainText.length(); i++){
+            if(plainText.charAt(i) == 'A'||plainText.charAt(i) == 'a'){
+                cipherText = cipherText+"D";
+            }
+            else if(plainText.charAt(i) == 'B'||plainText.charAt(i) == 'b'){
+                cipherText = cipherText+"E";
+            }
+            else if(plainText.charAt(i) == 'C'||plainText.charAt(i) == 'c'){
+                cipherText = cipherText+"F";
+            }
+            else if(plainText.charAt(i) == 'D'||plainText.charAt(i) == 'd'){
+                cipherText = cipherText+"G";
+            }
+            else if(plainText.charAt(i) == 'E'||plainText.charAt(i) == 'e'){
+                cipherText = cipherText+"H";
+            }
+            else if(plainText.charAt(i) == 'F'||plainText.charAt(i) == 'f'){
+                cipherText = cipherText+"I";
+            }
+            else if(plainText.charAt(i) == 'G'||plainText.charAt(i) == 'g'){
+                cipherText = cipherText+"J";
+            }
+            else if(plainText.charAt(i) == 'H'||plainText.charAt(i) == 'h'){
+                cipherText = cipherText+"K";
+            }
+            else if(plainText.charAt(i) == 'I'||plainText.charAt(i) == 'i'){
+                cipherText = cipherText+"L";
+            }
+            else if(plainText.charAt(i) == 'J'||plainText.charAt(i) == 'j'){
+                cipherText = cipherText+"M";
+            }
+            else if(plainText.charAt(i) == 'K'||plainText.charAt(i) == 'k'){
+                cipherText = cipherText+"N";
+            }
+            else if(plainText.charAt(i) == 'L'||plainText.charAt(i) == 'l'){
+                cipherText = cipherText+"O";
+            }
+            else if(plainText.charAt(i) == 'M'||plainText.charAt(i) == 'm'){
+                cipherText = cipherText+"P";
+            }
+            else if(plainText.charAt(i) == 'N'||plainText.charAt(i) == 'n'){
+                cipherText = cipherText+"Q";
+            }
+            else if(plainText.charAt(i) == 'O'||plainText.charAt(i) == 'o'){
+                cipherText = cipherText+"R";
+            }
+            else if(plainText.charAt(i) == 'P'||plainText.charAt(i) == 'p'){
+                cipherText = cipherText+"S";
+            }
+            else if(plainText.charAt(i) == 'Q'||plainText.charAt(i) == 'q'){
+                cipherText = cipherText+"T";
+            }
+            else if(plainText.charAt(i) == 'R'||plainText.charAt(i) == 'r'){
+                cipherText = cipherText+"U";
+            }
+            else if(plainText.charAt(i) == 'S'||plainText.charAt(i) == 's'){
+                cipherText = cipherText+"V";
+            }
+            else if(plainText.charAt(i) == 'T'||plainText.charAt(i) == 't'){
+                cipherText = cipherText+"W";
+            }
+            else if(plainText.charAt(i) == 'U'||plainText.charAt(i) == 'u'){
+                cipherText = cipherText+"X";
+            }
+            else if(plainText.charAt(i) == 'V'||plainText.charAt(i) == 'v'){
+                cipherText = cipherText+"Y";
+            }
+            else if(plainText.charAt(i) == 'W'||plainText.charAt(i) == 'w'){
+                cipherText = cipherText+"Z";
+            }
+            else if(plainText.charAt(i) == 'X'||plainText.charAt(i) == 'x'){
+                cipherText = cipherText+"A";
+            }
+            else if(plainText.charAt(i) == 'Y'||plainText.charAt(i) == 'y'){
+                cipherText = cipherText+"B";
+            }
+            else if(plainText.charAt(i) == 'Z'||plainText.charAt(i) == 'z'){
+                cipherText = cipherText+"C";
+            }
+            else if(plainText.charAt(i) == ' '){
+                cipherText = cipherText+" ";
+            }
+            else{
+                cipherText = cipherText+plainText.charAt(i);
+            }
+        }  
+        System.out.println();
+        System.out.println("Cipher Text is: "+cipherText);
+     }
+}
